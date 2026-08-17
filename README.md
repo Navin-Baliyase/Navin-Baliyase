@@ -1,53 +1,91 @@
 # Hi, I'm Navin
 
-Backend engineer focused on Ruby on Rails — API design, background job
-processing, third-party/webhook integrations, and multi-tenant SaaS
-architecture. I build on PostgreSQL, Redis, Docker, and AWS, and have
-recently been adding LLM/RAG features (Groq, Ollama, pgvector) directly
-into Rails apps.
+Backend engineer focused on Ruby on Rails — API design, background job processing, third-party/webhook integrations, and multi-tenant SaaS architecture. I build on PostgreSQL, Redis, Docker, and AWS, and have recently been adding LLM/RAG features (Groq, Ollama, pgvector) directly into Rails apps.
 
-## Featured Projects
+Below are six of my side projects — real screenshots and a real recorded conversation, not mockups.
 
-**[Curovia](https://github.com/Navin-Baliyase/care-hub) — multi-tenant clinic management SaaS**
-Rails 8.1 · PostgreSQL/pgvector · Hotwire · WhatsApp (Meta Cloud API) · Kamal
-Branded per-organisation portals, role-based staff access, billing, an
-MCP/REST API for AI-agent integrations, and a two-language WhatsApp
-booking flow.
-🚀 Live: [curovia.life](https://curovia.life)
+---
 
-**[DB Chat](https://github.com/Navin-Baliyase/db-chat) — talk to any PostgreSQL database in plain English**
-Rails 8.1 · pgvector · Groq · Ollama (RAG)
-Retrieves the relevant tables via vector search, generates a read-only
-SQL query from a natural-language question, runs it, and explains the
-result.
+### 🏥 [Curovia](https://curovia.life) — multi-tenant clinic management SaaS
+<img src="assets/curovia/dashboard.png" width="800" alt="Curovia org admin dashboard">
+
+Branded per-organisation portals, role-based staff access, billing, an MCP/REST API for AI-agent integrations, and a WhatsApp booking flow in English and Hindi.
+
+`Rails 8.1` `PostgreSQL` `pgvector` `Hotwire` `WhatsApp Cloud API` `Kamal`
+
+🚀 **Live at [curovia.life](https://curovia.life)**
+
+---
+
+### 💬 DB Chat — talk to any PostgreSQL database in plain English
+<img src="assets/db-chat/demo.gif" width="800" alt="DB Chat conversation demo">
+
+Retrieves the relevant tables via vector search (RAG), generates a read-only SQL query from a natural-language question, runs it, and explains the result. The GIF above is a real recorded conversation — note the read-only safety layer correctly deflecting a "delete posts table" request.
+
+`Rails 8.1` `pgvector` `Groq` `Ollama`
+
+📖 Technical case study — not deployed (no reason to run this publicly, but nothing stops it either)
+
+---
+
+### 🎯 RailShunt — embeddings-based job-matching platform
+<img src="assets/railshunt/dashboard.png" width="800" alt="RailShunt dashboard with real scraped job matches">
+
+Scores real scraped job postings against a resume across five weighted dimensions (semantic similarity, skills, experience, salary, location) and tracks applications through a full pipeline.
+
+<img src="assets/railshunt/applications.png" width="800" alt="RailShunt applications Kanban pipeline">
+
+`Rails 7.2` `pgvector` `OpenAI` `Sidekiq-Cron` `ActionCable`
+
+📖 Technical case study — the scraper runs against real job boards on a schedule, not something to leave running on a public demo
+
+---
+
+### 📈 FII Accumulation Tracker — scored investment-signal pipeline
+<img src="assets/fii-tracker/dashboard.png" width="800" alt="FII Accumulation Tracker dashboard">
+
+A scheduled scrape → score → rank pipeline tracking institutional-investor accumulation in Indian equities, with a composite scoring algorithm over shareholding trends and fundamentals.
+
+`Rails 7.2` `Sidekiq` `Redis` `Pundit`
+
 📖 Technical case study
 
-**[RailShunt](https://github.com/Navin-Baliyase/railshunt) — embeddings-based job-matching platform**
-Rails 7.2 · pgvector · OpenAI · Sidekiq-Cron · ActionCable
-Scores scraped job postings against a resume across five weighted
-dimensions and tracks applications through a state machine.
+---
+
+### 🔌 Creator Hub — adapter-pattern social media API
+Real response from the running app — one interface hiding four different platform APIs:
+
+```json
+{
+  "platforms": [
+    { "name": "youtube",   "connected": true, "profile": { "followers": 1204 } },
+    { "name": "instagram", "connected": true },
+    { "name": "twitter",   "connected": true },
+    { "name": "linkedin",  "connected": false }
+  ]
+}
+```
+
+An API-only Rails service for connecting and publishing to multiple social platforms from one unified feed — no UI, so no screenshot, just the real API doing its job.
+
+`Rails 7.1` `PostgreSQL` `Redis` `Sidekiq` `Devise+JWT`
+
 📖 Technical case study
 
-**[Creator Hub](https://github.com/Navin-Baliyase/creator-hub) — social-media management API**
-Rails 7.1 · PostgreSQL · Redis · Sidekiq · Devise+JWT
-Adapter-pattern API for connecting and publishing to multiple social
-platforms from one unified feed.
-📖 Technical case study
+---
 
-**[Interactive Virtual Background](https://github.com/Navin-Baliyase/interactive-virtual-background) — cross-platform virtual camera**
-TypeScript · Electron · Three.js · MediaPipe
-Full system-design writeup (process topology, frame budgets, per-OS
-virtual-camera tradeoffs, security review) plus an in-progress capture/
-segmentation/compositing implementation.
+### 🎥 Interactive Virtual Background — cross-platform virtual camera
+<img src="assets/background/architecture.svg" width="800" alt="Frame pipeline architecture">
+
+A from-scratch system design and early POC for a desktop app that segments and composites a webcam feed in real time, then exposes it to Meet/Zoom/Teams as a virtual camera. Capture, MediaPipe segmentation, and a Linux virtual-camera bridge are working; Windows/macOS bridges are their own native workstreams, not yet built.
+
+`Electron` `TypeScript` `Three.js` `MediaPipe`
+
 📖 Early-stage POC + design doc
 
-**[FII Accumulation Tracker](https://github.com/Navin-Baliyase/fii-tracker) — scored investment-signal pipeline**
-Rails 7.2 · Sidekiq · Redis · Pundit
-Scheduled pipeline scrapes shareholding and financial data for Indian
-equities and computes a composite accumulation score per stock.
-📖 Technical case study
+---
 
-## Technical Skills
+## 🛠️ Technical Skills
 
 **Backend** Ruby · Ruby on Rails · Python
 **Databases** PostgreSQL · pgvector · Redis
@@ -57,7 +95,7 @@ equities and computes a composite accumulation score per stock.
 **Integrations** REST APIs · webhooks · WhatsApp Cloud API · OAuth
 **AI / LLM** Groq · Ollama · OpenAI embeddings · RAG (pgvector)
 
-## Engineering Areas
+## 🏗️ Engineering Areas
 
 - Multi-tenant SaaS architecture — org/branch scoping, plan gating, RBAC
 - API design — JSON-RPC + REST/OpenAPI, adapter patterns
@@ -66,7 +104,7 @@ equities and computes a composite accumulation score per stock.
 - Third-party integrations — WhatsApp, payments, LLM providers
 - RAG / vector search — pgvector, embedding pipelines
 
-## Contact
+## 📫 Contact
 
 - Email — navinkumar2508@gmail.com
 - LinkedIn — [linkedin.com/in/dynamicnavin](https://linkedin.com/in/dynamicnavin)
