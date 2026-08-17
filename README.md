@@ -7,7 +7,7 @@ Below are six of my side projects — real screenshots and a real recorded conve
 ---
 
 ### 🏥 [Curovia](https://curovia.life) — multi-tenant clinic management SaaS
-<img src="assets/curovia/dashboard.png" width="800" alt="Curovia org admin dashboard">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/curovia/dashboard.png" width="800" alt="Curovia org admin dashboard">
 
 Branded per-organisation portals, role-based staff access, billing, an MCP/REST API for AI-agent integrations, and a WhatsApp booking flow in English and Hindi.
 
@@ -18,7 +18,7 @@ Branded per-organisation portals, role-based staff access, billing, an MCP/REST 
 ---
 
 ### 💬 DB Chat — talk to any PostgreSQL database in plain English
-<img src="assets/db-chat/demo.gif" width="800" alt="DB Chat conversation demo">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/db-chat/demo.gif" width="800" alt="DB Chat conversation demo">
 
 Retrieves the relevant tables via vector search (RAG), generates a read-only SQL query from a natural-language question, runs it, and explains the result. The GIF above is a real recorded conversation — note the read-only safety layer correctly deflecting a "delete posts table" request.
 
@@ -29,11 +29,11 @@ Retrieves the relevant tables via vector search (RAG), generates a read-only SQL
 ---
 
 ### 🎯 RailShunt — embeddings-based job-matching platform
-<img src="assets/railshunt/dashboard.png" width="800" alt="RailShunt dashboard with real scraped job matches">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/railshunt/dashboard.png" width="800" alt="RailShunt dashboard with real scraped job matches">
 
 Scores real scraped job postings against a resume across five weighted dimensions (semantic similarity, skills, experience, salary, location) and tracks applications through a full pipeline.
 
-<img src="assets/railshunt/applications.png" width="800" alt="RailShunt applications Kanban pipeline">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/railshunt/applications.png" width="800" alt="RailShunt applications Kanban pipeline">
 
 `Rails 7.2` `pgvector` `OpenAI` `Sidekiq-Cron` `ActionCable`
 
@@ -42,7 +42,7 @@ Scores real scraped job postings against a resume across five weighted dimension
 ---
 
 ### 📈 FII Accumulation Tracker — scored investment-signal pipeline
-<img src="assets/fii-tracker/dashboard.png" width="800" alt="FII Accumulation Tracker dashboard">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/fii-tracker/dashboard.png" width="800" alt="FII Accumulation Tracker dashboard">
 
 A scheduled scrape → score → rank pipeline tracking institutional-investor accumulation in Indian equities, with a composite scoring algorithm over shareholding trends and fundamentals.
 
@@ -75,7 +75,7 @@ An API-only Rails service for connecting and publishing to multiple social platf
 ---
 
 ### 🎥 Interactive Virtual Background — cross-platform virtual camera
-<img src="assets/background/architecture.svg" width="800" alt="Frame pipeline architecture">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/background/architecture.png" width="800" alt="Frame pipeline architecture">
 
 A from-scratch system design and early POC for a desktop app that segments and composites a webcam feed in real time, then exposes it to Meet/Zoom/Teams as a virtual camera. Capture, MediaPipe segmentation, and a Linux virtual-camera bridge are working; Windows/macOS bridges are their own native workstreams, not yet built.
 
