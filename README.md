@@ -7,7 +7,7 @@ Below are six of my side projects — real recorded walkthroughs, not mockups. E
 ---
 
 ## 🏥 [Curovia](https://curovia.life) — multi-tenant clinic management SaaS
-<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/curovia/demo.gif" width="700" alt="Curovia walkthrough — dashboard, calendar, billing, analytics">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/curovia/demo.gif" width="100%" alt="Curovia walkthrough — dashboard, calendar, billing, analytics">
 
 Branded per-organisation portals, role-based staff access, billing, an MCP/REST API for AI-agent integrations, and a WhatsApp booking flow in English and Hindi.
 
@@ -18,7 +18,7 @@ Branded per-organisation portals, role-based staff access, billing, an MCP/REST 
 ---
 
 ## 💬 DB Chat — talk to any PostgreSQL database in plain English
-<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/db-chat/demo.gif" width="700" alt="DB Chat walkthrough — home, connections, a real conversation">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/db-chat/demo.gif" width="100%" alt="DB Chat walkthrough — home, connections, a real conversation">
 
 Retrieves the relevant tables via vector search (RAG), generates a read-only SQL query from a natural-language question, runs it, and explains the result. The GIF above walks through the home screen, the connection manager, then a real recorded conversation — note the read-only safety layer correctly deflecting a "delete posts table" request.
 
@@ -29,7 +29,7 @@ Retrieves the relevant tables via vector search (RAG), generates a read-only SQL
 ---
 
 ## 🎯 RailShunt — embeddings-based job-matching platform
-<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/railshunt/demo.gif" width="700" alt="RailShunt walkthrough — dashboard, applications pipeline, analytics">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/railshunt/demo.gif" width="100%" alt="RailShunt walkthrough — dashboard, applications pipeline, analytics">
 
 Scores real scraped job postings against a resume across five weighted dimensions (semantic similarity, skills, experience, salary, location) and tracks applications through a full pipeline — the GIF above shows real scraped matches, the Kanban application pipeline, and the analytics view.
 
@@ -40,7 +40,7 @@ Scores real scraped job postings against a resume across five weighted dimension
 ---
 
 ## 📈 FII Accumulation Tracker — scored investment-signal pipeline
-<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/fii-tracker/demo.gif" width="700" alt="FII Accumulation Tracker walkthrough — dashboard, stock list, screener">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/fii-tracker/demo.gif" width="100%" alt="FII Accumulation Tracker walkthrough — dashboard, stock list, screener">
 
 A scheduled scrape → score → rank pipeline tracking institutional-investor accumulation in Indian equities, with a composite scoring algorithm over shareholding trends and fundamentals — the GIF above shows the dashboard, stock list, and multi-factor screener.
 
@@ -51,7 +51,7 @@ A scheduled scrape → score → rank pipeline tracking institutional-investor a
 ---
 
 ## 🔌 Creator Hub — adapter-pattern social media API
-<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/creator-hub/demo.gif" width="700" alt="Creator Hub walkthrough — dashboard, AI content studio, analytics">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/creator-hub/demo.gif" width="100%" alt="Creator Hub walkthrough — dashboard, AI content studio, analytics">
 
 An AI-powered social media management platform — connect YouTube, Instagram, Twitter, LinkedIn, TikTok, and Facebook, then manage everything through one dashboard. The Content Studio (shown above) generates video captions/hashtags from an upload, plans and drafts a full week of posts across platforms with Auto Pilot, and builds a per-platform growth playbook — all backed by a JSON API with adapter-pattern platform integrations underneath.
 
@@ -62,7 +62,7 @@ An AI-powered social media management platform — connect YouTube, Instagram, T
 ---
 
 ## 🎥 Interactive Virtual Background — cross-platform virtual camera
-<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/background/architecture.png" width="700" alt="Frame pipeline architecture">
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/background/architecture.png" width="100%" alt="Frame pipeline architecture">
 
 A from-scratch system design and early POC for a desktop app that segments and composites a webcam feed in real time, then exposes it to Meet/Zoom/Teams as a virtual camera. Capture, MediaPipe segmentation, and a Linux virtual-camera bridge are working; Windows/macOS bridges are their own native workstreams, not yet built.
 
