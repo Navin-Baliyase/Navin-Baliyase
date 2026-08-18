@@ -51,20 +51,9 @@ A scheduled scrape → score → rank pipeline tracking institutional-investor a
 ---
 
 ### 🔌 Creator Hub — adapter-pattern social media API
-Real response from the running app — one interface hiding four different platform APIs:
+<img src="https://raw.githubusercontent.com/Navin-Baliyase/Navin-Baliyase/main/assets/creator-hub/demo.gif" width="700" alt="Creator Hub walkthrough — dashboard, AI content studio, analytics">
 
-```json
-{
-  "platforms": [
-    { "name": "youtube",   "connected": true, "profile": { "followers": 1204 } },
-    { "name": "instagram", "connected": true },
-    { "name": "twitter",   "connected": true },
-    { "name": "linkedin",  "connected": false }
-  ]
-}
-```
-
-An API-only Rails service for connecting and publishing to multiple social platforms from one unified feed — no UI, so no screenshot, just the real API doing its job.
+An AI-powered social media management platform — connect YouTube, Instagram, Twitter, LinkedIn, TikTok, and Facebook, then manage everything through one dashboard. The Content Studio (shown above) generates video captions/hashtags from an upload, plans and drafts a full week of posts across platforms with Auto Pilot, and builds a per-platform growth playbook — all backed by a JSON API with adapter-pattern platform integrations underneath.
 
 `Rails 7.1` `PostgreSQL` `Redis` `Sidekiq` `Devise+JWT`
 
